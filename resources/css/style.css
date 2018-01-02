@@ -109,9 +109,9 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-size: cover;
-  /* height: 100%; */
+  height: 100%;
   justify-content: center;
-  background-image: url("../images/pexels-photo-478014.png");
+  background-image: url("../images/pexels-photo-478014.jpg");
 }
 
 
@@ -132,9 +132,14 @@ header {
   color: #4c4a4c;
 }
 
-@media only screen and (max-width: 480px)
+@media only screen and (max-width: 1000px)
 {
   .blog {
-    overflow: none;
+    overflow: visible;
+    height: 100%;
+  }
+  .main {
+    background-repeat: repeat-y;
+    height: auto;
   }
 }
