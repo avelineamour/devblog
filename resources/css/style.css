@@ -131,3 +131,10 @@ header {
   /* overflow: scroll; */
   color: #4c4a4c;
 }
+
+@media only screen and (max-width: 480px)
+{
+  .blog {
+    overflow: none;
+  }
+}
