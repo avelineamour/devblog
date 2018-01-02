@@ -109,7 +109,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-size: cover;
-  height: 100%;
+  /* height: 100%; */
   justify-content: center;
   background-image: url("../images/pexels-photo-478014.png");
 }
