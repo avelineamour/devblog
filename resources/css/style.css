@@ -75,10 +75,14 @@ a:hover {
   color: #AA717B;
 }
 
+img, iframe {
+  max-width: 100%;
+}
+
 /* ULs Within Posts As Opposed to the UL in the Hamburger Menu */
 .ul {
   font-family: "Avenir Next";
-  margin-left: 10rem;
+  /* margin-left: 10rem; */
   line-height: 2;
   color: #4c4a4c;
 
