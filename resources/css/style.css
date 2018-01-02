@@ -119,7 +119,7 @@ header {
   width: 85%;
   height: 60rem;
   /* background-color: white; */
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .blogtext {
