@@ -1,0 +1,129 @@
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  text-align: center;
+  color: #C99DA5;
+  padding-top: 8rem;
+}
+
+span {
+  color: #C99DA5;
+  font-size: .7rem;
+  text-align: center;
+  font-family: "Avenir Next";
+  display: block;
+
+}
+
+nav ul {
+  list-style: none;
+  font-family: "Avenir Next";
+  background-color: #faf7f7;
+  /* background-color: #FEFEFE; */
+  color: #C99DA5;
+  position: fixed;
+  top: 20;
+  left: 0;
+  padding: 3rem;
+  line-height: 5;
+  display: none;
+  /* box-shadow: .0px .25px 2px #C99DA5; */
+  height: 100%;
+  font-size: .85rem;
+}
+
+.fa-bars:hover ~ nav ul {
+  display: block;
+
+}
+nav ul:hover {
+ display: block;
+
+}
+
+pre, code {
+  display: inline;
+  color: #006699;
+}
+
+
+.fab, .fa-github, .fa-linkedin-in, .fa-twitter, .fa-headphones, .fa-bars {
+  color: #C99DA5;
+  padding: 1rem;
+}
+
+i, .fab:hover, .fa-github:hover, .fa-linkedin-in:hover, .fa-twitter:hover, .fa-headphones:hover, .fa-bars:hover {
+  color: #AA717B;
+}
+
+a {
+  text-decoration: none;
+  color: #C99DA5;
+}
+
+a:hover {
+  color: #AA717B;
+}
+
+/* ULs Within Posts As Opposed to the UL in the Hamburger Menu */
+.ul {
+  font-family: "Avenir Next";
+  margin-left: 10rem;
+  line-height: 2;
+  color: #4c4a4c;
+
+
+}
+
+header {
+  width: 100%;
+  background-color: #faf7f7;
+  /* background-color: #FEFEFE; */
+  height: 4rem;
+  top: 0;
+  box-shadow: .1px .1px 1px #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 1000;
+  opacity: .95;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-size: cover;
+  height: 100%;
+  justify-content: center;
+  background-image: url("../images/pexels-photo-478014.png");
+}
+
+
+.blog {
+  width: 85%;
+  height: 60rem;
+  /* background-color: white; */
+  overflow: scroll;
+}
+
+.blogtext {
+  font-family: "Avenir Next";
+  font-size: .9rem;
+  text-align: center;
+  padding: 2rem 1rem 0rem 1rem;
+  line-height: 2;
+  overflow: scroll;
+  color: #4c4a4c;
+}
