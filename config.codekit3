@@ -90,17 +90,6 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
-		},
-	"\/resources\/images\/pexels-photo-478014.png": {
-		"ft": 32768,
-		"iS": 21971508,
-		"oA": 0,
-		"oAP": "\/resources\/images\/pexels-photo-478014.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
 		}
 	},
 "hooks": [
