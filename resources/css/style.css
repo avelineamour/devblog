@@ -25,6 +25,7 @@ span {
 
 }
 
+/* Hamburger Menu Dropdrown */
 nav ul {
   list-style: none;
   font-family: "Avenir Next";
@@ -91,11 +92,12 @@ img, iframe {
 
 header {
   width: 100%;
-  background-color: #faf7f7;
+  /* background-color: #faf7f7; */
   /* background-color: #FEFEFE; */
+  background-color: none;
   height: 4rem;
   top: 0;
-  box-shadow: .1px .1px 1px #fff;
+  /* box-shadow: .1px .1px 1px #fff; */
   display: flex;
   align-items: center;
   justify-content: space-between;
