@@ -134,6 +134,10 @@ header {
   color: #4c4a4c;
 }
 
+#gemdemo {
+  text-align: center;
+}
+
 @media only screen and (max-width: 1000px)
 {
   .blog {
