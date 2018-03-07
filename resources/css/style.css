@@ -148,4 +148,8 @@ header {
     background-repeat: repeat-y;
     height: auto;
   }
+
+  .fa-bars {
+    display: none;
+  }
 }
