@@ -17,7 +17,7 @@
           <li><a href="#flexbox">Flexbox Tutorial</a></li>
           <li><a href="#dev">My Intro to Web Development</a></li>
           <li><a href="#rubygem">Creating My First CLI Ruby Gem</a></li>
-          <li><a href="#">Coming Soon...</a></li>
+          <li><a href="#andromeda-project">Creating My First Sinatra Web Application</a></li>
           <li><a href="#">Coming Soon...</a></li>
           <li><a href="#">Coming Soon...</a></li>
           <li><a href="#">Coming Soon...</a></li>
@@ -38,6 +38,31 @@
 
     <div class="main">
       <div class="blog">
+
+        <h1 id="andromeda-project">Creating My First Sinatra Web Application</h1>
+        <span>April 26th, 2018</span>
+        <p class="blogtext">
+
+        Today I finished my first Sinatra Web Application <a href="https://github.com/avelineamour/andromeda-project">The Andromeda Project</a>.<br /><br />
+
+            <iframe src="https://player.vimeo.com/video/266735639" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe><br /><br />
+
+        I was really excited to start this project because it was my first multi-page site, first time using a database, and first time programming a website with Ruby. I learned basic HTML and css at Codecademy, which is what this blog was built with, but had always been curious about bigger applications. Thankfully the preceding <a href="https://learn.co/">Learn.co</a> labs, though challenging, were very helpful in prepping us to build our own Sinatra project.<br /><br />
+
+        I began with planning on paper. I'm a visual learner and ActiveRecord associations and join tables have been difficult for me to wrap my mind around. I chose to base my project around the fictional narrative that in the future, we have built an FTL (faster-than-light) drive that has allowed us to explore and map out the Andromeda Galaxy. Before I embarked on my developer journey, I had always said I wanted to be a programmer and/or work on something to do with space. For a long time, that was all talk and no action, but now having put action behind my goals, I thought it would be cool to bring it full circle and apply my programming to something space themed. Realistically, I know this project will not be used for anything, but rather serves as practice and evidence of what I can do. In the future I may choose something more applicable in a work environment (it might be a while before we figure out that FTL drive).<br /><br />
+
+        After I had planned out my models -- a User having many Planets and a Planet having many Aliens, I got to work on designing. For me, design is everything. Design is my passion in life and I am personally very sensitive to the aesthetics of things around me and things on the web especially. I believe that good design is important to user experience and that it drastically improves user experience. I took the opportunity to use and essentially learn a new program -- Adobe XD (Experience Design). I was able to design each page and link pages to pages so that I could preview the application flow. This greatly helped position me to start my project because in the beginning I felt overwhelmed by the task and all the pages that there were. In the beginning, I was overly ambitious and intended to add models for Black Holes and Nebulae, but quickly realized that was too much for this particular project.<br /><br />
+
+        Once the pages were roughly designed, I started building them out. I created controllers and the views for each model and began working on the html/css for one page at a time, just fleshing out the basics and putting placeholders in for where the names of Users, Planets, and Aliens would be dynamically displayed. Later, I created the tables. To be honest, the process was a bit chaotic. I had a neuropsych evaluation a few years ago and one of the things we discovered from the IQ test was that my approach to tasks was a bit chaotic and inefficient even though I got to the same end. I can definitely see that play out when it comes to big projects like this. In the end, I made it there, but if I had to do it all over again, I'd create my tables and models first, seed some data early, flesh out all of the routes in the proper order on each controller, and then worry about the html and css after.<br /><br />
+
+        I learned quite a lot on this project. I learned about validations and being able to validate the presence and uniqueness of certain inputs in the model IE: <code>validates :username, :email, uniqueness: true</code> or <code>validates :username, :email, :password, presence: true</code>. This was really useful for my project because it prevented any objects from being saved to the database which didn't have unique names or missing fields. In the previous labs, we had used <code>rack-flash</code> to display error messages based on blank inputs and I wasn't thinking much farther along than that. During the project, I realized there were many other things to verify-- what if the username was taken? What if the password was wrong? What if the object existed already? So the project became a process of individually approaching those issues and coming up with solutions, which was fun and interesting.<br /><br />
+
+        I ran into a few frustrations-- namely learning that if one of the controllers inheriting from <code>ApplicationController</code> was named alphabetically higher IE: my <code>AliensController</code>, it would not know about its parent class and also that the order of the controllers in the <code>config.ru</code> file was important-- specifically that <code>UsersController</code> should be first. The latter actually sent me on a 3 hour goose chase trying to figure out why my flash messages stopped working. That was it. The worst part was at the end, realizing I had not set up my associations properly, the main goal and requirement of this project. Thankfully, I was not far off from the solution and only had to modify a few things. I had to change the User model to having many Aliens <strong>through</strong> Planets and also give Planets a <code>user_id</code>. Because Aliens already had a <code>planet_id</code> column, they were associated with a User through Planets. I also realized I hadn't programmed in a way for the data to be unique to each user, which I would not have been able to do without the former associations being established. Now that Planets had a <code>user_id</code>, when a User created a Planet, they would at that point be logged in, so the <code>user_id</code> given to Planet could be set with <code>current_user.id</code> which I made a helper method for called <code>user_id</code>.<br /><br />
+
+        Overall this was a very challenging, fun, and cool project and I am very proud of it.
+
+
+
 
         <h1 id="rubygem">Creating My First CLI Ruby Gem</h1>
         <span>March 7th, 2018</span>
