@@ -12,12 +12,12 @@ body {
 h1 {
   font-family: 'Lora', serif;
   text-align: center;
-  color: #C99DA5;
+  color: #627f8e;
   padding-top: 8rem;
 }
 
 span {
-  color: #C99DA5;
+  color: #b1426b;
   font-size: .7rem;
   text-align: center;
   font-family: "Avenir Next";
@@ -54,12 +54,15 @@ nav ul:hover {
 
 pre, code {
   display: inline;
-  color: #006699;
+  color: #627f8e;
+  background-color: #f7ecec;
+  border-radius: 4px;
+  padding: 3px;
 }
 
 
 .fab, .fa-github, .fa-linkedin-in, .fa-twitter, .fa-headphones, .fa-bars {
-  color: #C99DA5;
+  color: #627f8e;
   padding: 1rem;
 }
 
@@ -69,7 +72,7 @@ i, .fab:hover, .fa-github:hover, .fa-linkedin-in:hover, .fa-twitter:hover, .fa-h
 
 a {
   text-decoration: none;
-  color: #C99DA5;
+  color: #627f8e;
 }
 
 a:hover {
@@ -103,7 +106,7 @@ header {
   justify-content: space-between;
   position: fixed;
   z-index: 1000;
-  opacity: .95;
+  /* opacity: .95; */
 }
 
 .main {
@@ -121,7 +124,7 @@ header {
   width: 60%;
   height: 60rem;
   /* background-color: white; */
-  overflow: scroll;
+  /* overflow: scroll; */
 }
 
 .blogtext {
@@ -143,6 +146,7 @@ header {
   .blog {
     overflow: visible;
     height: 100%;
+    width: 80%;
   }
   .main {
     background-repeat: repeat-y;
