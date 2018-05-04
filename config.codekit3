@@ -7,7 +7,7 @@
 		"uuidString": "C4AB0EE2-831E-461F-BB55-E76A96F43DB2"
 		}
 	],
-"creatorBuild": "26148",
+"creatorBuild": "26680",
 "files": {
 	"\/index.html": {
 		"cB": 0,
@@ -15,6 +15,24 @@
 		"oA": 0,
 		"oAP": "\/index.html",
 		"oF": 0
+		},
+	"\/README.md": {
+		"cB": 0,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/resources\/css\/style-min.css": {
 		"aP": 1,
@@ -91,14 +109,15 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/resources\/images\/pexels-photo-478014.jpg": {
-		"ft": 16384,
+	"\/resources\/images\/pexels-photo-478014.png": {
+		"ft": 32768,
 		"iS": 882266,
 		"oA": 0,
-		"oAP": "\/resources\/images\/pexels-photo-478014.jpg",
+		"oAP": "\/resources\/images\/pexels-photo-478014.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		}
 	},
@@ -110,7 +129,8 @@
 	"creationDate": 536549461,
 	"displayValue": "Flatiron Blog",
 	"displayValueWasSetByUser": 1,
-	"iconImageName": "brackets_teal"
+	"iconImageName": "brackets_teal",
+	"iconImageWasSetByUser": 0
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -118,6 +138,7 @@
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
+	"autoprefixerEnableIEGrid": 0,
 	"babelAuxiliaryCommentAfter": "",
 	"babelAuxiliaryCommentBefore": "",
 	"babelConfigFileHandlingType": 0,
@@ -681,6 +702,10 @@
 		"id-match": {
 			"active": 0,
 			"optionString": "'^[a-z]+([A-Z][a-z]+)*$', {'properties': false, 'onlyDeclarations': true}"
+			},
+		"implicit-arrow-linebreak": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"indent": {
 			"active": 0,
@@ -1908,6 +1933,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
+		"outputFormat": 0,
 		"quality": 100
 		},
 	"languageDefaultsJS": {
