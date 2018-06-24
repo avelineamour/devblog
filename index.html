@@ -14,15 +14,16 @@
       <i class="fas fa-bars"></i>
       <nav>
         <ul>
+
+          <li><a href="#luxe-boutique">Luxe Boutique: Building an E-Commerce Rails Application</a></li>
+          <li><a href="#andromeda-project">Creating My First Sinatra Web Application</a></li>
           <li><a href="#productivity">Productivity & Growth Hacks</a></li>
+          <li><a href="#rubygem">Creating My First CLI Ruby Gem</a></li>
           <li><a href="#flexbox">Flexbox Tutorial</a></li>
           <li><a href="#dev">My Intro to Web Development</a></li>
-          <li><a href="#rubygem">Creating My First CLI Ruby Gem</a></li>
-          <li><a href="#andromeda-project">Creating My First Sinatra Web Application</a></li>
-          <li><a href="#">Coming Soon...</a></li>
-          <li><a href="#">Coming Soon...</a></li>
-          <li><a href="#">Coming Soon...</a></li>
-          <li><a href="#">Coming Soon...</a></li>
+
+
+
         </ul>
       </nav>
 
@@ -38,6 +39,30 @@
 
     <div class="main">
       <div class="blog">
+
+        <h1 id="luxe-boutique">Luxe Boutique: Building an E-Commerce Rails Application</h1>
+        <span>June 24th, 2018</span>
+        <p class="blogtext">
+          Today I wrapped up my first Rails web application. Having previously created a Sinatra web app, aspects of this project such as routing, user authentication, and CRUD were familiar, but Rails, being such a large framework with established conventions that were new to me, still presented many challenges. In my last project, I learned the value of planning and implementing models and migrations right away. So I made sure to apply that to this one. I took on some other challenges in building this project such as configuring it with a PostgresSQL database in anticipation of deploying it to Heroku.<br /><br />
+
+          I spent the first few days reviewing the omniauth process so I could implement that first and get it out of the way as well as planning out my models and ActiveRecord relationships. ActiveRecord table joins and <code>has_many, through:</code> relationships are not my forté. I frequently joke that they are mental gymnastics for me. And that's ok. It just takes me more time to visualize. So I stared, I thought, I drew, and connected the dots until it all made sense. I wrote the migrations for each model in my Bear app as well as describing the relationships of each model. I wrote user experience flows detailing what I expected to happen. User clicks this, then this happens, then they are presented with this form. Using visualization and putting myself in the user's shoes instead of trying to abstractly design this from the back end was helpful. <br /><br />
+
+          When I finished planning, I merely had to copy the code I'd already written for myself, thus alleviating a lot of the stress of setting up models and the db. My next step, which I would recommend to anyone building a Rails application was to set up the <code>nav</code> as I intended it to be with <code>home</code>, <code>log in</code>, <code>sign up</code>, <code>log out</code>, <code>shop</code>, and <code>cart</code>. I set up each page that those directed to with a quick <code>h1</code> and a word describing that page just to get the basic routing/page flow down without complexity. In the beginning, I wanted to make sure my user was logged in and it had grabbed the name and email properly so I displayed the <code>current_user</code> name, email and <code>logged_in?</code> on the home page to confirm. I have seen my classmates struggle in setting up their applications and would recommend to anyone who struggles to zoom out and set yourself up with the big picture before trying to go in and do detail work. I say this as someone often guilty of this, but who is trying to streamline their own process. <br /><br />
+
+          After I got user auth working, including with facebook, I seeded my database with a few items for the shop and began working on the cart functionality. I am happy to say that from there, everything followed a logical order. It was not without obstacles, though. One thing that was extremely important for me in building this was that it was as close to a real application as possible. I could have taken it a lot farther in order to satisfy that goal, but opted to use discretion. What was important was that it showcased my ability to build an application that eventually would or could be used and had a few core features that were important to me, like user reviews displayed with stars for example. <br /><br />
+
+          One of these important features was the cart working whether logged in or out. In a real online store, you can add items to your cart that get stored in the session, so I set that up with the ability to modify the quantity as well. To check out, the user must be logged in. Once you log in, the <code>session[:cart]</code> items get associated to you, while remaining in the session. The cart show page iterates over the <code>session[:cart]</code>, which was intentional because that way, whether you're logged in or out, it shows the items you've added. I could have done some if else logic there, but I saw this as the simplest way. <br /><br />
+
+          It was a challenge working to modify the quantities in both the session and the current user's associated cart items at first. When I went to show my dad my project, the quantity wasn't updating correctly. There were several places in my code where I looked for a <code>cart_item</code> by <code>item_id</code>, but failed to realize that many <code>cart_items</code> get created with respective <code>item_id</code> and that finding one is just grabbing the first one in the db as a whole and not out of the users collection. Once I fixed those lines of code, my quantity function worked again and order was restored in the galaxy! Or ... in my project.<br /><br />
+
+          One thing I'm proud of is that I saved styling and css for last! In my Sinatra project I felt compelled to style first. This was stressful. Rails also provides a much more organized way to approach styling with respective stylesheets for each controller. The joy in building applications like this for me is in the design. The functionality is all in service to that. That's just how I feel about websites and web apps in general. Make them work, but make them clean, usable, and beautiful as well. I'm proud to say I designed and styled this application from scratch and designed a custom logo as well.<br /><br />
+
+          In conclusion, I believe this application exemplifies my skills in graphic and web design, my ability to pause, to plan, to approach a task with a big picture view (start big, then zoom in), to approach things in an organized manner, abstract things away and be <strong>DRY</strong>, and finally to place due consideration on user experience. While I do not believe my project to be without flaws or room for improvement, nor do I expect it to be as a new Ruby engineer, I do believe it to be a solid and promising start to a developer career and the work I put into it reflects my desire to do so. I am very grateful to the Flatiron School for teaching us Rails and so excited to proceed to JavaScript to take future projects to the next level! Please see the demo video for more details on features.<br /><br /><br />
+
+          <iframe src="https://player.vimeo.com/video/276768499?title=0&byline=0&portrait=0" width="640" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+        </p>
 
         <h1 id="andromeda-project">Creating My First Sinatra Web Application</h1>
         <span>April 26th, 2018</span>
